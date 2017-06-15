@@ -25,7 +25,7 @@ std::string Shape::getName() const{
 	return name_;
 }
 
-/*
+
 //5.4
 //Ausgabe von Objekten des Typs Shape
 std::ostream & Shape::print(std::ostream & os) const{
@@ -37,4 +37,3 @@ std::ostream & Shape::print(std::ostream & os) const{
 std::ostream & operator <<(std::ostream & os, Shape const& s){
 	return s.print(os);
 }
-*/
