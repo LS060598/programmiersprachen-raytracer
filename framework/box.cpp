@@ -48,7 +48,7 @@
   		auto diff = max - min;
         return diff.x*diff.y*diff.z;
 	}
-/*
+
 //5.5
 	std::ostream& Box::print(std::ostream & os) const{
 		Shape::print(os);
@@ -61,5 +61,5 @@
 		<<max.y<< ", "
 		<<max.z<< ". ";
 	}
-	*/
+	
 

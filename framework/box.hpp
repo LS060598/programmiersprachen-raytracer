@@ -16,11 +16,11 @@ public:
 	~Box();
 	glm::vec3 const& getMin() const;
 	glm::vec3 const& getMax() const;
-	float area() const /*override*/;
-	float volume() const /*override*/;
-	/*
+	float area() const override;
+	float volume() const override;
+	
 	std::ostream & print (std::ostream & os) const override;
-*/
+
 
 private:
 	glm::vec3 min;
