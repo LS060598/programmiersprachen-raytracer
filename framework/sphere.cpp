@@ -13,12 +13,12 @@ Sphere::Sphere(glm::vec3 const& center, float radius):
 	Shape(), 
 	center_{center}, 
 	radius_{radius} {}
-/*
+
 Sphere::Sphere(std::string const& name, Color const& color, glm::vec3 const& center, float const& radius):
 	Shape(name,color),	
 	center_{center},
 	radius_{radius}{}
-*/
+
 Sphere::~Sphere(){}
 
 
