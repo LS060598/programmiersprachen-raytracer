@@ -18,10 +18,11 @@ public:
 	~Sphere();
 	glm::vec3 const& getCenter() const;
 	float const& getRadius() const;
-	float area() const /*override*/;
-	float volume() const /*override*/;
-	/*
+	float area() const override;
+	float volume() const override;
+	
 	std::ostream & print (std::ostream & os) const override;
+	/*
 	//bool intersect const&(glm::vec3 const& origin, glm::vec3 const&direction);
 	bool intersect (Ray const& ray, float& distance);
 */

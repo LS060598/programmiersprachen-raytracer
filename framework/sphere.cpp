@@ -47,7 +47,7 @@ float Sphere::volume() const
 		float pi = M_PI;
 		return ((4/3) * pi * pow(radius_, 3));
 }
-/*
+
 //5.5
 //überschreiben der Klasse print
 std::ostream & Sphere::print(std::ostream & os) const{
@@ -59,7 +59,7 @@ std::ostream & Sphere::print(std::ostream & os) const{
 	<<center_.z<<"  Radius: "
 	<<radius_<< ".";
 }
-
+/*
 //5.6
 //intersect
 bool Sphere::intersect(Ray const& ray, float& distance){
