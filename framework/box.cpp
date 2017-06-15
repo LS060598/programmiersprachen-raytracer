@@ -1,20 +1,65 @@
+#include <iostream>
 #include "box.hpp"
-#include <cmath>
-#include <catch.hpp>
-#include <algorithm>
+
+//5.2
+//Constructor
+    Box::Box():
+		Shape(),
+		min{0.0, 0.0, 0.0}, 
+		max{0.0, 0.0, 0.0} {}
+
+
+	Box::Box(glm::vec3 min_, glm::vec3 max_):
+		min{min_}, 
+		max{max_} {}
 /*
-//destructor
-Box::Box():
-	Shape(),
-	min_{0.0,0.0,0.0},
-    max_{0.0,0.0,0.0},
+	Box::Box(std::string const& name, Color const& color, glm::vec3 const& min_, glm::vec3 const& max_):
+		Shape(name,color),
+		min{min_},
+		max{max_} {}
+*/
+	Box::~Box(){}
+
 
 //getter
-glm::vec3 const& Box::getMax() const {
-    return max_;
-}
+	glm::vec3 const& Box::getMin() const
+	{
+		return min;
+	}
 
-glm::vec3 const& Box::getMin() const {
-    return min_;
-}
-*/
+
+	glm::vec3 const& Box::getMax() const
+	{
+		return max;
+	}
+
+
+
+
+//Methoden
+//area
+	float Box::area() const{
+  		auto diff = max - min;
+  		return 2*((diff.x*diff.y) + (diff.y*diff.z) + (diff.x*diff.z));
+	}
+
+//volume
+	float Box::volume() const{
+  		auto diff = max - min;
+        return diff.x*diff.y*diff.z;
+	}
+/*
+//5.5
+	std::ostream& Box::print(std::ostream & os) const{
+		Shape::print(os);
+
+		os<< "min "
+		<<min.x<< ", "
+		<<min.y<< ", "
+		<<min.z<< ", " <<std::endl<< "max "
+		<<max.x<< ", "
+		<<max.y<< ", "
+		<<max.z<< ". ";
+	}
+	*/
+
