@@ -12,12 +12,12 @@
 	Box::Box(glm::vec3 min_, glm::vec3 max_):
 		min{min_}, 
 		max{max_} {}
-/*
+
 	Box::Box(std::string const& name, Color const& color, glm::vec3 const& min_, glm::vec3 const& max_):
 		Shape(name,color),
 		min{min_},
 		max{max_} {}
-*/
+
 	Box::~Box(){}
 
 
