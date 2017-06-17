@@ -7,20 +7,20 @@
 Sphere::Sphere():
 	Shape(),
 	center_{0.0, 0.0, 0.0}, 
-	radius_{0.0} {/*
-		std::cout <<"sphere default constructor erstellt" << std::endl;*/
+	radius_{0.0} {
+		std::cout <<"sphere default constructor erstellt" << std::endl;
 	}
 
 
 Sphere::Sphere(std::string const& name, Color const& color, glm::vec3 const& center, float const& radius):
 	Shape(name,color),	
 	center_{center},
-	radius_{radius}{/*
-		std::cout << "sphere constructor erstellt" <<std::endl;*/
+	radius_{radius}{
+		std::cout << "sphere constructor erstellt" <<std::endl;
 	}
 
-Sphere::~Sphere(){/*
-	std::cout <<"sphere destructor erstellt" <<std::endl;*/
+Sphere::~Sphere(){
+	std::cout <<"sphere destructor erstellt" <<std::endl;
 }
 
 
