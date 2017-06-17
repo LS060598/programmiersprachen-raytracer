@@ -44,7 +44,7 @@ std::ostream & operator <<(std::ostream & os, Shape const& s){
 	return s.print(os);
 }
 
-/*
+
 //5.7
 //linke Seite = statisch, rechte Seite dynamisch
 //statisch-> zur Übersetzungszeit festgelegt oder gebunden, kann zur lLaufzeit nicht verändert werden
@@ -60,7 +60,7 @@ std::ostream & operator <<(std::ostream & os, Shape const& s){
 		// -> Größere Flexibilität und einfacher zu schreiben -> keine Deklarationen
 
 
-
+/*
 //5.9
 //Klassenhierachie -> 2 Arten
                 // -> baumartige Struktur, bei der alle Klassen von einer einzigen übergeordneten Klasse abgeleitet sind (Java)
