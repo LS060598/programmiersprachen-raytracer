@@ -60,7 +60,7 @@ std::ostream & operator <<(std::ostream & os, Shape const& s){
 		// -> Größere Flexibilität und einfacher zu schreiben -> keine Deklarationen
 
 
-/*
+
 //5.9
 //Klassenhierachie -> 2 Arten
                 // -> baumartige Struktur, bei der alle Klassen von einer einzigen übergeordneten Klasse abgeleitet sind (Java)
@@ -82,4 +82,3 @@ std::ostream & operator <<(std::ostream & os, Shape const& s){
                 // -> Momentaufnahme des Systems
 				// -> beziehungen aus Klassendiagrammen Spiegeln sich in Objektdiagrammen wieder
 
-*/
