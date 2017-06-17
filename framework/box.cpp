@@ -3,22 +3,25 @@
 
 //5.2
 //Constructor
+//default constructor
     Box::Box():
 		Shape(),
 		min{0.0, 0.0, 0.0}, 
-		max{0.0, 0.0, 0.0} {}
+		max{0.0, 0.0, 0.0} {/*
+			std::cout << "box default constructor erstellt" << std::endl;*/
+		}
 
-
-	Box::Box(glm::vec3 min_, glm::vec3 max_):
-		min{min_}, 
-		max{max_} {}
 
 	Box::Box(std::string const& name, Color const& color, glm::vec3 const& min_, glm::vec3 const& max_):
 		Shape(name,color),
 		min{min_},
-		max{max_} {}
+		max{max_} {/*
+			std::cout << "box constructor erstellt" << std::endl; */
+		}
 
-	Box::~Box(){}
+	Box::~Box(){/*
+		std::cout << "box destructor erstellt" << std::endl;*/
+	}
 
 
 //getter
