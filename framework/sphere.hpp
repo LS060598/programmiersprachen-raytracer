@@ -7,12 +7,11 @@
 #include <cmath>
 #include <glm/vec3.hpp>
 #include "ray.hpp"
+# include <glm/gtx/intersect.hpp> 
 
 class Sphere: public Shape{
 public:
 	Sphere();
-	Sphere(glm::vec3 const& center, float radius);
-	
 	Sphere(std::string const& name, Color const& color, glm::vec3 const& center, float const& radius);
 	
 	~Sphere();
@@ -22,10 +21,10 @@ public:
 	float volume() const override;
 	
 	std::ostream & print (std::ostream & os) const override;
-	/*
+	
 	//bool intersect const&(glm::vec3 const& origin, glm::vec3 const&direction);
 	bool intersect (Ray const& ray, float& distance);
-*/
+
 private:
 	glm::vec3 center_;
 	float radius_;
