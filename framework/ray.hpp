@@ -10,6 +10,15 @@ struct Ray{
 	origin{ori},
 	direction{dir}{}
 
+	glm::vec3 const& getOrigin() const{
+    return origin_;
+  	}
+
+  	glm::vec3 const& getDirection() const{
+    return direction_;
+  	}
+
+
 	glm::vec3 origin;
 	glm::vec3 direction;
 };
