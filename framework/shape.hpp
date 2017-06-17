@@ -10,7 +10,7 @@ class Shape{
         //5.2
         Shape();
         Shape(std::string const& name, Color const& color);
-        ~Shape();
+        /*virtual*/~Shape();
     
         Color getColor() const;
         std::string getName() const; 

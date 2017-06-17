@@ -6,18 +6,18 @@
 //Konstruktoren
 Shape::Shape():
 	name_{""},
-    color_{0.0,0.0,0.0,} {/*
-		std::cout <<"default constructor erstellt" <<std::endl;*/
+    color_{0.0,0.0,0.0,} {
+		std::cout <<"default constructor erstellt" <<std::endl;
 	}
 
 Shape::Shape(std::string const&  name, Color const& color):
 	name_{name},
-    color_{color} {/*
-		std::cout << "constructor erstellt" <<std::endl;*/
+    color_{color} {
+		std::cout << "constructor erstellt" <<std::endl;
 	}
 
-Shape::~Shape(){/*
-	std::cout<< "destructor erstellt" <<std::endl;*/
+Shape::~Shape(){
+	std::cout<< "destructor erstellt" <<std::endl;
 }
 
 
