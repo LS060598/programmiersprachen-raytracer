@@ -6,8 +6,8 @@
 //default constructor
     Box::Box():
 		Shape(),
-		min{0.0, 0.0, 0.0}, 
-		max{0.0, 0.0, 0.0} {
+		min{-1}, 
+		max{1} {
 			std::cout << "box default constructor erstellt" << std::endl;
 		}
 
