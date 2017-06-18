@@ -10,7 +10,9 @@ class Shape{
         //5.2
         Shape();
         Shape(std::string const& name, Color const& color);
-        /*virtual*/~Shape();
+        /*virtual*/ ~Shape();
+        // mit dem virtuellen destructor wird immer noch zusätzlich zum destructor
+        //der Klasse shape der destructor der Klasse box bzw. sphere erstellt
     
         Color getColor() const;
         std::string getName() const; 

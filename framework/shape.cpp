@@ -6,7 +6,7 @@
 //Konstruktoren
 Shape::Shape():
 	name_{""},
-    color_{0.0,0.0,0.0,} {
+    color_{0.0,0.0,0.0} {
 		std::cout <<"default constructor erstellt" <<std::endl;
 	}
 
