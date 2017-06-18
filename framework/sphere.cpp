@@ -6,8 +6,8 @@
 //Constructors
 Sphere::Sphere():
 	Shape(),
-	center_{0.0, 0.0, 0.0}, 
-	radius_{0.0} {
+	center_{0.0,0.0,0.0}, 
+	radius_{1.0} {
 		std::cout <<"sphere default constructor erstellt" << std::endl;
 	}
 
@@ -37,17 +37,13 @@ float const& Sphere::getRadius() const{
 
 //Methoden
 //area
-float Sphere::area() const
-{
-		float pi = M_PI;
-		return (4 * pi * pow(radius_, 2));
-	}
+float Sphere::area() const{
+  return 4.0 * M_PI * radius_ * radius_;
+}
 
 //volume
-float Sphere::volume() const
-{
-		float pi = M_PI;
-		return ((4/3) * pi * pow(radius_, 3));
+float Sphere::volume() const{
+  return ((4.0 * M_PI * pow(radius_, 3.0))/3.0);
 }
 
 //5.5
@@ -64,7 +60,7 @@ std::ostream & Sphere::print(std::ostream & os) const{
 
 //5.6
 //intersect
-bool Sphere::intersect(Ray const& ray, float& distance){
-	//ray._direction = glm::normalize(ray._direction);
-return glm::intersectRaySphere(ray.origin, ray.direction, center_, radius_ * radius_, distance);
+bool Sphere::intersect(Ray const& ray, float& distance) const{
+  return glm::intersectRaySphere(ray.origin_, ray.direction_,
+          center_, radius_*radius_, distance);
 }
