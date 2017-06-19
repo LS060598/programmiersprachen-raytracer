@@ -41,7 +41,7 @@ TEST_CASE("Sphere Default Constructor", "[5.2]"){
   REQUIRE(sphere.getCenter().y == 0.0);
   REQUIRE(sphere.getCenter().z == 0.0);
   REQUIRE(sphere.getRadius() == 1.0);
-  REQUIRE(sphere.getName() == "Cooles Objekt");
+  REQUIRE(sphere.getName() == "");
   std::cout << "---------------------------------------\n";
 }
 
